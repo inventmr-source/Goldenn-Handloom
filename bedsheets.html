@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore bedsheet photos and leave a review for Golden Handloom.">
+    <title>Bedsheets | Golden Handloom</title>
+    <link rel="stylesheet" href="blanket-sets.css">
+    <script src="bedsheets.js" defer></script>
+</head>
+<body>
+    <header class="product-header">
+        <a class="brand" href="index.html">Golden Handloom</a>
+        <a class="back-link" href="index.html#products">← All products</a>
+    </header>
+
+    <main>
+        <section class="product-layout" aria-labelledby="product-title">
+            <div class="gallery">
+                <img class="main-photo" id="main-photo" src="box1.jpg" alt="Patterned bedsheet displayed on a bed">
+                <div class="photo-thumbnails" aria-label="More bedsheet photos">
+                    <button class="thumbnail is-selected" type="button" data-src="box1.jpg" data-alt="Patterned bedsheet displayed on a bed" aria-label="Show photo 1" aria-pressed="true">
+                        <img src="box1.jpg" alt="">
+                    </button>
+                    <button class="thumbnail" type="button" data-src="box2.jpg" data-alt="Folded patterned bedding displayed on a bed" aria-label="Show photo 2" aria-pressed="false">
+                        <img src="box2.jpg" alt="">
+                    </button>
+                    <button class="thumbnail" type="button" data-src="hero.jpg" data-alt="Textile and bedding collection on display" aria-label="Show photo 3" aria-pressed="false">
+                        <img src="hero.jpg" alt="">
+                    </button>
+                </div>
+                <p class="photo-note">Photos show examples from the collection. Please contact us to confirm available designs, sizes, and set contents.</p>
+            </div>
+
+            <div class="product-info">
+                <p class="eyebrow">GOLDEN HANDLOOM COLLECTION</p>
+                <h1 id="product-title">Bedsheets</h1>
+                <p class="rating-summary"><span aria-label="No ratings yet">☆☆☆☆☆</span> <span id="rating-summary">No reviews yet</span></p>
+                <p class="product-description">Explore bedsheets with distinctive patterns and a welcoming look for your home. Contact us for current colors, sizes, set contents, and pricing.</p>
+                <a class="contact-button" href="mailto:goldenntextile@gmail.com?subject=Bedsheet%20enquiry">Ask about this product</a>
+                <a class="phone-link" href="tel:7300829242">Call us: 7300829242</a>
+            </div>
+        </section>
+
+        <section class="reviews-section" aria-labelledby="reviews-title">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">YOUR FEEDBACK</p>
+                    <h2 id="reviews-title">Customer reviews</h2>
+                </div>
+                <p class="review-count" id="review-count">0 reviews</p>
+            </div>
+
+            <p class="review-disclaimer">Reviews you submit are saved only in this browser and are not sent to the store.</p>
+            <div class="review-list" id="review-list" aria-live="polite"></div>
+            <p class="no-reviews" id="no-reviews">No reviews yet. Be the first to share your feedback.</p>
+
+            <form class="review-form" id="review-form">
+                <h3>Write a review</h3>
+                <label for="review-name">Your name</label>
+                <input id="review-name" name="name" type="text" maxlength="60" autocomplete="name" required>
+
+                <fieldset class="rating-field">
+                    <legend>Your rating</legend>
+                    <div class="rating-options">
+                        <label><input type="radio" name="rating" value="5" required><span>5 stars</span></label>
+                        <label><input type="radio" name="rating" value="4"><span>4 stars</span></label>
+                        <label><input type="radio" name="rating" value="3"><span>3 stars</span></label>
+                        <label><input type="radio" name="rating" value="2"><span>2 stars</span></label>
+                        <label><input type="radio" name="rating" value="1"><span>1 star</span></label>
+                    </div>
+                </fieldset>
+
+                <label for="review-text">Your review</label>
+                <textarea id="review-text" name="review" rows="4" maxlength="1000" required></textarea>
+                <button class="submit-review" type="submit">Post review</button>
+                <p class="form-notice" id="form-notice" role="status" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="product-footer">
+        <span>&copy; <span id="current-year"></span> Golden Handloom</span>
+        <a href="index.html">Back to home</a>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sign in or create an account with Golden Handloom.">
+    <title>Sign in | Golden Handloom</title>
+    <link rel="stylesheet" href="login.css">
+    <script type="module" src="login.js"></script>
+</head>
+<body>
+    <main class="login-page">
+        <a class="brand" href="index.html" aria-label="Golden Handloom home">
+            <img src="nav-1.jpg" alt="Golden Handloom">
+        </a>
+
+        <section class="login-card" aria-labelledby="login-title">
+            <h1 id="login-title">Welcome back</h1>
+            <p class="intro" id="login-intro">Sign in to your Golden Handloom account</p>
+
+            <button class="google-button" id="google-signup" type="button">
+                <svg aria-hidden="true" viewBox="0 0 48 48">
+                    <path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5Z"/>
+                    <path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.25 5.48-4.73 7.18l7.64 5.93c4.46-4.12 7.13-10.2 7.13-17.58Z"/>
+                    <path fill="#FBBC05" d="M10.53 28.59A14.4 14.4 0 0 1 9.75 24c0-1.59.27-3.13.75-4.59l-7.98-6.19A23.9 23.9 0 0 0 0 24c0 3.9.94 7.59 2.6 10.78l7.93-6.19Z"/>
+                    <path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.9-5.87l-7.64-5.93c-2.13 1.43-4.86 2.28-8.26 2.28-6.26 0-11.57-4.22-13.47-9.91L2.6 34.78C6.51 42.62 14.62 48 24 48Z"/>
+                </svg>
+                <span>Sign up with Google</span>
+            </button>
+
+            <div class="divider" aria-hidden="true"><span>or sign in with email</span></div>
+
+            <form id="login-form">
+                <label for="email">Email address</label>
+                <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+
+                <div class="password-label">
+                    <label for="password">Password</label>
+                    <a href="#password-help" id="password-help">Forgot password?</a>
+                </div>
+                <input id="password" name="password" type="password" autocomplete="current-password" placeholder="Enter your password" required>
+
+                <button class="submit-button" type="submit">Sign in</button>
+            </form>
+
+            <p class="account-prompt">New to Golden Handloom? <a href="#create-account" id="create-account">Create an account</a></p>
+            <section class="account-status" id="account-status" hidden aria-live="polite">
+                <p id="account-email"></p>
+                <button class="submit-button" id="sign-out" type="button">Sign out</button>
+            </section>
+            <p class="setup-notice" id="setup-notice" role="status" aria-live="polite"></p>
+        </section>
+
+        <a class="back-link" href="index.html">← Back to Golden Handloom</a>
+    </main>
+</body>
+</html>
